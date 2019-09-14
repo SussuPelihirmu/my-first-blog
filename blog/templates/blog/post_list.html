@@ -12,6 +12,10 @@
         <h2><em>
             Best study tips
         </em></h2>
+        <p>Studying is extremely important for your future - so keep working on it!</p>
+        <p>1. Stay healthy (That includes sleeping enough, eating healthy way and execising.</p>
+        <p>2. Have inspiring hobbies and see friend too - that helpes you remain motiveited </p>
+        <p>3. Put truely effort to your studies - do not multitask and focus on improving your weighness</p>
     </div>
     <div>
         <h2>
@@ -20,17 +24,17 @@
             </em>
     </div>
     <div>
-            <h2>
-              :)      
-            </h2>
-    </div>
-    
+
+    </div> 
     <div>
-        </h2>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Studying is extremely important for your future - so keep working on it!</p>
-    </div>   
+    {% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %} 
+</div>
 </body>
 </html>
 
