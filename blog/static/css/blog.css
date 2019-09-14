@@ -1,0 +1,16 @@
+
+h2 a {
+    color: #ABEDF4;
+    font-family: 'Indie Flower';
+}
+
+h1 a {
+    color: rgb(253, 251, 251);
+    font-family: 'Lobster';
+}
+
+.page-header {
+    background-color: #F4B2AB;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
